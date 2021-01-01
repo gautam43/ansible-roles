@@ -1,0 +1,8 @@
+- hosts: myweb
+  roles:
+  - role: "apache"
+
+- hosts: mylb
+  tags: "lb"
+  roles:
+  - role: "mylb"
